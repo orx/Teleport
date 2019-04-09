@@ -46,9 +46,10 @@ void orxFASTCALL Update(const orxCLOCK_INFO *_pstInfo, void *_pContext)
     orxConfig_PopSection();
 
     // For all objects
-    for(orxOBJECT *Object = orxOBJECT(orxStructure_GetFirst(orxSTRUCTURE_ID_OBJECT));
+    orxSTRINGID CharacterID = orxString_ToCRC("Character");
+    for(orxOBJECT *Object = orxObject_GetNext(orxNULL, CharacterID);
         Object;
-        Object = orxOBJECT(orxStructure_GetNext(Object)))
+        Object = orxObject_GetNext(Object, CharacterID))
     {
         orxVECTOR Pos;
 
