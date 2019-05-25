@@ -1,5 +1,5 @@
-Orx Sample #1 : Teleport
-========================
+Orx Sample #1 : Seamless Screen Edge Teleportation
+==================================================
 
 This sample has been made using [orx, portable game engine](https://orx-project.org).
 
