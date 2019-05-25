@@ -45,7 +45,7 @@ void orxFASTCALL Update(const orxCLOCK_INFO *_pstInfo, void *_pContext)
     orxConfig_GetVector("BR", &BR);
     orxConfig_PopSection();
 
-    // For all objects
+    // For all "Character" objects
     orxSTRINGID CharacterID = orxString_ToCRC("Character");
     for(orxOBJECT *Object = orxObject_GetNext(orxNULL, CharacterID);
         Object;
