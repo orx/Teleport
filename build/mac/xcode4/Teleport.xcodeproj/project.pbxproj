@@ -1,0 +1,355 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		568F4AAD366E7B0C34FE5173 /* Teleport.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67D954AC7DF9167424D07382 /* Teleport.cpp */; };
+		51D96164092E2C3F5AB51387 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C947253031C37E04CA77BCE /* Foundation.framework */; };
+		78072B341D70262925A67264 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AE334090CD53FE90FB04103 /* AppKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		579D11C06024683D7916024F /* Teleport.ini */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Teleport.ini"; path = "../../../data/config/Teleport.ini"; sourceTree = "<group>"; };
+		4DC9269D58480501171C3FA9 /* Teleportd.ini */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Teleportd.ini"; path = "../../../data/config/Teleportd.ini"; sourceTree = "<group>"; };
+		72593A72521949F939CD6827 /* Teleportp.ini */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Teleportp.ini"; path = "../../../data/config/Teleportp.ini"; sourceTree = "<group>"; };
+		67D954AC7DF9167424D07382 /* Teleport.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Teleport.cpp"; path = "../../../src/Teleport.cpp"; sourceTree = "<group>"; };
+		1C947253031C37E04CA77BCE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Foundation.framework"; path = "/System/Library/Frameworks/Foundation.framework"; sourceTree = "<absolute>"; };
+		3AE334090CD53FE90FB04103 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "AppKit.framework"; path = "/System/Library/Frameworks/AppKit.framework"; sourceTree = "<absolute>"; };
+		226D1C3A3A3B3EAE53E132D3 /* Teleportd */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = "Teleportd"; path = "Teleportd"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1AAB5107271D2A8C7B9C70FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51D96164092E2C3F5AB51387 /* Foundation.framework in Frameworks */,
+				78072B341D70262925A67264 /* AppKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2582774E3F0125581BF25571 /* Teleport */ = {
+			isa = PBXGroup;
+			children = (
+				427D1A74322E554E11737F25 /* config */,
+				1706025127AA55203AB12CD4 /* src */,
+				38263F066BE909694A606948 /* Frameworks */,
+				21F62B9178BF7A6604501AA1 /* Products */,
+			);
+			name = "Teleport";
+			sourceTree = "<group>";
+		};
+		427D1A74322E554E11737F25 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				579D11C06024683D7916024F /* Teleport.ini */,
+				4DC9269D58480501171C3FA9 /* Teleportd.ini */,
+				72593A72521949F939CD6827 /* Teleportp.ini */,
+			);
+			name = "config";
+			sourceTree = "<group>";
+		};
+		1706025127AA55203AB12CD4 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				67D954AC7DF9167424D07382 /* Teleport.cpp */,
+			);
+			name = "src";
+			sourceTree = "<group>";
+		};
+		38263F066BE909694A606948 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C947253031C37E04CA77BCE /* Foundation.framework */,
+				3AE334090CD53FE90FB04103 /* AppKit.framework */,
+			);
+			name = "Frameworks";
+			sourceTree = "<group>";
+		};
+		21F62B9178BF7A6604501AA1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				226D1C3A3A3B3EAE53E132D3 /* Teleportd */,
+			);
+			name = "Products";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		67C80B3A72DF3B2F44F81E25 /* Teleport */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59717DE57B4C5A802F9A2D61 /* Build configuration list for PBXNativeTarget "Teleport" */;
+			buildPhases = (
+				7D3C30CA70B015815CF77A88 /* Resources */,
+				44EC3FAA3820715F07AE40D0 /* Sources */,
+				1AAB5107271D2A8C7B9C70FF /* Frameworks */,
+				9607AE3710C85E8F00CD1376 /* Postbuild */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Teleport";
+			productInstallPath = "$(HOME)/bin";
+			productName = "Teleport";
+			productReference = 226D1C3A3A3B3EAE53E132D3 /* Teleportd */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Teleport" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 1;
+			mainGroup = 2582774E3F0125581BF25571 /* Teleport */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				67C80B3A72DF3B2F44F81E25 /* Teleportd */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7D3C30CA70B015815CF77A88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9607AE3710C85E8F00CD1376 /* Postbuild */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Postbuild;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp -f ../lib/dynamic/liborx*.dylib ../../../bin";
+		};
+/* End PBXShellScriptBuildPhase section */
+/* Begin PBXSourcesBuildPhase section */
+		44EC3FAA3820715F07AE40D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				568F4AAD366E7B0C34FE5173 /* Teleport.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		12F647AC737A47EC61F730E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = ../../../bin;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "Teleportd";
+			};
+			name = "Debug";
+		};
+		38DA66716C9448285B6A1FD8 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = ../../../bin;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "Teleportp";
+			};
+			name = "Profile";
+		};
+		3060296741DA1D994C0728EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = ../../../bin;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "Teleport";
+			};
+			name = "Release";
+		};
+		034B4B2D00581C8F2E343A1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "x86_64";
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"__orxDEBUG__",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../../../include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../../../lib/dynamic",
+				);
+				OBJROOT = "obj/x64/Debug";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-ffast-math",
+					"-mmacosx-version-min=10.9",
+					"-stdlib=libc++",
+					"-gdwarf-2",
+					"-Wno-write-strings",
+				);
+				OTHER_LDFLAGS = (
+					"-lorxd",
+					"-mmacosx-version-min=10.9",
+					"-stdlib=libc++",
+					"-dead_strip",
+				);
+				STANDARD_C_PLUS_PLUS_LIBRARY_TYPE = static;
+				SYMROOT = "../../../bin";
+			};
+			name = "Debug";
+		};
+		475F64073F4519180B672DD7 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "x86_64";
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"__orxPROFILER__",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../../../include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../../../lib/dynamic",
+				);
+				OBJROOT = "obj/x64/Profile";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-ffast-math",
+					"-mmacosx-version-min=10.9",
+					"-stdlib=libc++",
+					"-gdwarf-2",
+					"-Wno-write-strings",
+				);
+				OTHER_LDFLAGS = (
+					"-lorxp",
+					"-mmacosx-version-min=10.9",
+					"-stdlib=libc++",
+					"-dead_strip",
+				);
+				STANDARD_C_PLUS_PLUS_LIBRARY_TYPE = static;
+				SYMROOT = "../../../bin";
+			};
+			name = "Profile";
+		};
+		120C6DE310C4512270771ED8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "x86_64";
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../../../include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../../../lib/dynamic",
+				);
+				OBJROOT = "obj/x64/Release";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-ffast-math",
+					"-mmacosx-version-min=10.9",
+					"-stdlib=libc++",
+					"-gdwarf-2",
+					"-Wno-write-strings",
+				);
+				OTHER_LDFLAGS = (
+					"-lorx",
+					"-mmacosx-version-min=10.9",
+					"-stdlib=libc++",
+					"-dead_strip",
+				);
+				STANDARD_C_PLUS_PLUS_LIBRARY_TYPE = static;
+				SYMROOT = "../../../bin";
+			};
+			name = "Release";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		59717DE57B4C5A802F9A2D61 /* Build configuration list for PBXNativeTarget "Teleportd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12F647AC737A47EC61F730E8 /* Debug */,
+				38DA66716C9448285B6A1FD8 /* Profile */,
+				3060296741DA1D994C0728EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Debug";
+		};
+		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Teleport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				034B4B2D00581C8F2E343A1A /* Debug */,
+				475F64073F4519180B672DD7 /* Profile */,
+				120C6DE310C4512270771ED8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Debug";
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

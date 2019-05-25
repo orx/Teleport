@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeLite_Workspace Name="Teleport" Database="./Teleport.tags">
+  <Project Name="Teleport" Path="Teleport.project" Active="Yes" />
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug_x64" Selected="yes">
+      <Project Name="Teleport" ConfigName="Debug_x64"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Profile_x64" Selected="yes">
+      <Project Name="Teleport" ConfigName="Profile_x64"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release_x64" Selected="yes">
+      <Project Name="Teleport" ConfigName="Release_x64"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>
