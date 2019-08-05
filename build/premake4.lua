@@ -118,13 +118,9 @@ solution "Teleport"
         "StaticRuntime"
     }
 
-    configuration {"not macosx"}
+    configuration {}
         includedirs {"$(ORX)/include"}
         libdirs {"$(ORX)/lib/dynamic"}
-
-    configuration {"macosx"}
-        includedirs {"../include"}
-        libdirs {"../lib/dynamic"}
 
     configuration {"not vs2013", "not vs2015", "not vs2017"}
         flags {"EnableSSE2"}
@@ -251,7 +247,7 @@ project "Teleport"
 -- Mac OS X
 
     configuration {"macosx"}
-        postbuildcommands {"cp -f ../lib/dynamic/liborx*.dylib " .. copybase .. "/bin"}
+        postbuildcommands {"cp -f $(ORX)/lib/dynamic/liborx*.dylib " .. copybase .. "/bin"}
 
 
 -- Windows

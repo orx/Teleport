@@ -24,12 +24,12 @@ ifeq ($(config),debug64)
   TARGETDIR  = ../../../bin
   TARGET     = $(TARGETDIR)/Teleportd
   DEFINES   += -D__orxDEBUG__
-  INCLUDES  += -I../../../include
+  INCLUDES  += -I$(ORX)/include
   ALL_CPPFLAGS  += $(CPPFLAGS) -MMD -MP $(DEFINES) $(INCLUDES)
   ALL_CFLAGS    += $(CFLAGS) $(ALL_CPPFLAGS) -ffast-math -g -msse2 -m64 -mmacosx-version-min=10.9 -stdlib=libc++ -gdwarf-2 -Wno-write-strings
   ALL_CXXFLAGS  += $(CXXFLAGS) $(ALL_CFLAGS) -fno-exceptions
   ALL_RESFLAGS  += $(RESFLAGS) $(DEFINES) $(INCLUDES)
-  ALL_LDFLAGS   += $(LDFLAGS) -L../../../lib/dynamic -L. -static-libgcc -static-libstdc++ -m64 -L/usr/lib64 -mmacosx-version-min=10.9 -stdlib=libc++ -dead_strip
+  ALL_LDFLAGS   += $(LDFLAGS) -L$(ORX)/lib/dynamic -L. -m64 -L/usr/lib64 -mmacosx-version-min=10.9 -stdlib=libc++ -dead_strip
   LIBS      += -lorxd -framework Foundation -framework AppKit
   LDDEPS    +=
   LINKCMD    = $(CXX) -o $(TARGET) $(OBJECTS) $(RESOURCES) $(ALL_LDFLAGS) $(LIBS)
@@ -39,7 +39,7 @@ ifeq ($(config),debug64)
   endef
   define POSTBUILDCMDS
 	@echo Running post-build commands
-	cp -f ../lib/dynamic/liborx*.dylib ../../../bin
+	cp -f $(ORX)/lib/dynamic/liborx*.dylib ../../../bin
   endef
 endif
 
@@ -48,12 +48,12 @@ ifeq ($(config),profile64)
   TARGETDIR  = ../../../bin
   TARGET     = $(TARGETDIR)/Teleportp
   DEFINES   += -D__orxPROFILER__
-  INCLUDES  += -I../../../include
+  INCLUDES  += -I$(ORX)/include
   ALL_CPPFLAGS  += $(CPPFLAGS) -MMD -MP $(DEFINES) $(INCLUDES)
   ALL_CFLAGS    += $(CFLAGS) $(ALL_CPPFLAGS) -ffast-math -g -msse2 -O2 -m64 -mmacosx-version-min=10.9 -stdlib=libc++ -gdwarf-2 -Wno-write-strings
   ALL_CXXFLAGS  += $(CXXFLAGS) $(ALL_CFLAGS) -fno-exceptions -fno-rtti
   ALL_RESFLAGS  += $(RESFLAGS) $(DEFINES) $(INCLUDES)
-  ALL_LDFLAGS   += $(LDFLAGS) -L../../../lib/dynamic -L. -static-libgcc -static-libstdc++ -m64 -L/usr/lib64 -mmacosx-version-min=10.9 -stdlib=libc++ -dead_strip
+  ALL_LDFLAGS   += $(LDFLAGS) -L$(ORX)/lib/dynamic -L. -m64 -L/usr/lib64 -mmacosx-version-min=10.9 -stdlib=libc++ -dead_strip
   LIBS      += -lorxp -framework Foundation -framework AppKit
   LDDEPS    +=
   LINKCMD    = $(CXX) -o $(TARGET) $(OBJECTS) $(RESOURCES) $(ALL_LDFLAGS) $(LIBS)
@@ -63,7 +63,7 @@ ifeq ($(config),profile64)
   endef
   define POSTBUILDCMDS
 	@echo Running post-build commands
-	cp -f ../lib/dynamic/liborx*.dylib ../../../bin
+	cp -f $(ORX)/lib/dynamic/liborx*.dylib ../../../bin
   endef
 endif
 
@@ -72,12 +72,12 @@ ifeq ($(config),release64)
   TARGETDIR  = ../../../bin
   TARGET     = $(TARGETDIR)/Teleport
   DEFINES   +=
-  INCLUDES  += -I../../../include
+  INCLUDES  += -I$(ORX)/include
   ALL_CPPFLAGS  += $(CPPFLAGS) -MMD -MP $(DEFINES) $(INCLUDES)
   ALL_CFLAGS    += $(CFLAGS) $(ALL_CPPFLAGS) -ffast-math -g -msse2 -O2 -m64 -mmacosx-version-min=10.9 -stdlib=libc++ -gdwarf-2 -Wno-write-strings
   ALL_CXXFLAGS  += $(CXXFLAGS) $(ALL_CFLAGS) -fno-exceptions -fno-rtti
   ALL_RESFLAGS  += $(RESFLAGS) $(DEFINES) $(INCLUDES)
-  ALL_LDFLAGS   += $(LDFLAGS) -L../../../lib/dynamic -L. -static-libgcc -static-libstdc++ -m64 -L/usr/lib64 -mmacosx-version-min=10.9 -stdlib=libc++ -dead_strip
+  ALL_LDFLAGS   += $(LDFLAGS) -L$(ORX)/lib/dynamic -L. -m64 -L/usr/lib64 -mmacosx-version-min=10.9 -stdlib=libc++ -dead_strip
   LIBS      += -lorx -framework Foundation -framework AppKit
   LDDEPS    +=
   LINKCMD    = $(CXX) -o $(TARGET) $(OBJECTS) $(RESOURCES) $(ALL_LDFLAGS) $(LIBS)
@@ -87,7 +87,7 @@ ifeq ($(config),release64)
   endef
   define POSTBUILDCMDS
 	@echo Running post-build commands
-	cp -f ../lib/dynamic/liborx*.dylib ../../../bin
+	cp -f $(ORX)/lib/dynamic/liborx*.dylib ../../../bin
   endef
 endif
 
